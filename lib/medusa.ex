@@ -1,5 +1,5 @@
 defmodule Medusa do
-  def hello do
-    :world
+  def merge_images do
+    "This function will merge all the images into one"
   end
 end

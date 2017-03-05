@@ -1,9 +1,10 @@
 defmodule Medusa do
   import ImageBase64Handler
 
-  def merge_images(image_paths) do
-    convert(image_paths)
-    File.read! "/images/base64Output"
+  def merge_images(options) do
+    {arguments, _, _ } = options
+    convert(arguments)
+    File.read!("/images/base64Output") |> IO.puts
   end
 
   defp transform_to_base64 do

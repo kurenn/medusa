@@ -28,6 +28,7 @@ defmodule Medusa.Mixfile do
   #
   # Type "mix help deps" for more examples and options
   defp deps do
-    [{:image64, "~> 0.0.1"}]
+    [{:image64, "~> 0.0.1"},
+     {:anubis, "~> 0.3.0"}]
   end
 end

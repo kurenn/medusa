@@ -11,5 +11,5 @@ WORKDIR /code
 
 ADD . /code
 
-RUN mix local.hex --force \
+RUN yes | mix deps.get \
     && mix compile

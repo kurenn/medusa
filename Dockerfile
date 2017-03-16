@@ -11,7 +11,7 @@ WORKDIR /code
 
 ADD . /code
 
-RUN mix local.hex --force \
+RUN yes | mix deps.get --force \
     && mix compile
 
 ENTRYPOINT ["mix", "medusa", "stack"]

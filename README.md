@@ -1,3 +1,5 @@
+![Medusa](medusa.jpg)
+
 ## Overview
 
 `medusa` is a command line interface use to stack multiple images from URL's. It uses `imagemagick` to process the images.

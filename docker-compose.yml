@@ -1,0 +1,11 @@
+version: "2"
+
+services:
+  web:
+    image: icalialabs/medusa:development
+    build:
+      context: .
+      dockerfile: dev.Dockerfile
+    working_dir: /code
+    volumes:
+      - .:/code

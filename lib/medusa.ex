@@ -4,11 +4,11 @@ defmodule Medusa do
   def merge_images(options) do
     {arguments, _, _ } = options
     convert(arguments)
-    File.read!("/images/base64Output") |> IO.puts
+    File.read!("/tmp/base64Output") |> IO.puts
   end
 
   defp transform_to_base64 do
-    imagetobase64("/images/output.jpg", "/images/base64Output")
+    imagetobase64("/tmp/output.jpg", "/tmp/base64Output")
   end
 
   defp convert(image_paths) do
@@ -17,7 +17,7 @@ defmodule Medusa do
   end
 
   defp conversion_arguments do
-    ["-gravity", "center", "-composite", "/images/output.jpg"]
+    ["-gravity", "center", "-composite", "/tmp/output.jpg"]
   end
 
 end

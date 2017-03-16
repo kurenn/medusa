@@ -1,2 +1,8 @@
 %{"anubis": {:hex, :anubis, "0.3.0", "e5cdf7be4214cc0a5a354c79d43b5e3221ed041005b4e0fb0f9c3027dc03c616", [:mix], []},
-  "image64": {:hex, :image64, "0.0.2", "fe5b4a007f9b1011d2a0e4d6295b65fac12a87cea39ccc8527560ecccfd5ebf9", [:mix], []}}
+  "cauldron": {:hex, :cauldron, "0.1.5", "3dc0cb584ef848da4605021a58601700957873b881d4e63d728b5a3b983c4e8c", [:mix], [{:httprot, "~> 0.1.3", [hex: :httprot, optional: false]}, {:reagent, "~> 0.1.3", [hex: :reagent, optional: false]}]},
+  "datastructures": {:hex, :datastructures, "0.2.6", "fe0fd2566886c79c072024acb7a062eaed56b06a87931526daefbdc12d902dee", [:mix], []},
+  "exts": {:hex, :exts, "0.3.3", "f03027317eb2a672ec53bb675bad6670e943edf1dfafa3097a7d3367cb630ebc", [:mix], [{:datastructures, "~> 0.2", [hex: :datastructures, optional: false]}]},
+  "httprot": {:hex, :httprot, "0.1.8", "d4aec05e1d85fb365ebad86a508af988a16569923a0d28dc154111283e357911", [:mix], [{:datastructures, "~> 0.2", [hex: :datastructures, optional: false]}, {:socket, "~> 0.3", [hex: :socket, optional: false]}]},
+  "image64": {:hex, :image64, "0.0.2", "fe5b4a007f9b1011d2a0e4d6295b65fac12a87cea39ccc8527560ecccfd5ebf9", [:mix], []},
+  "reagent": {:hex, :reagent, "0.1.11", "d0131bf432e2dbd47d2bfcfe3096b1cca8a421a42ddd64fabd1444ed71aa4fcf", [:mix], [{:exts, "~> 0.3", [hex: :exts, optional: false]}, {:socket, "~> 0.3", [hex: :socket, optional: false]}]},
+  "socket": {:hex, :socket, "0.3.7", "68c029a8449fc6efc5f4c3bdf6d8b19ca94d3304e419f364c5cfc8b716f7c219", [:mix], []}}
